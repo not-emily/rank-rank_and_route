@@ -1,0 +1,17 @@
+<footer>
+  <div class="footer__top container row">
+    <div class="col col-6">
+      <div class="footer-info">
+        <a href="/"><img class="logo" height="68px" width="250px" src="/assets/images/rank_and_route_logo.png" alt="Rank & Rent logo" /></a>
+        {% if site.data.general.phone %}<a href="tel:{{ site.data.general.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' ' }}">{{ site.data.general.phone }}</a><br>{% endif %}
+      </div>
+    </div>
+    <div class="footer__nav col-6">
+      <nav class="col">
+        <a href="/">Home</a>
+        <a href="/request-a-quote/">Request a Quote</a>
+      </nav>
+    </div>
+  </div>
+  <p class="footer__copyright">&copy; {{ site.time | date: '%Y' }} Rank & Route. All rights reserved.</p>
+</footer>

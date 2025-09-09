@@ -1,0 +1,13 @@
+<header>
+    <a href="/"><img class="logo" height="68px" width="250px" src="/assets/images/rank_and_route_logo.png" alt="Rank & Rent logo" /></a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            {% if site.data.general.phone %}<li><a href="tel:{{site.data.general.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-'}}">{{ site.data.general.phone }}</a></li>{% endif %}
+            <li><a href="/request-a-quote/" class="btn" role="button">GET A FREE QUOTE</a></li>
+        </ul>
+    </nav>
+</header>
