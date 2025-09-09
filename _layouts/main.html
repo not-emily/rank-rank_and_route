@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="/assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/responsive-header.css">
+        <link rel="preload" as="style"  onload="this.onload=null;this.rel='stylesheet'" href="/assets/css/responsive-header.css">
+        <noscript><link rel="stylesheet" ref="/assets/css/responsive-header.css"></noscript>
         {% if page.css %}
             <link rel="stylesheet" href="{{page.css}}">
+            <noscript><link rel="stylesheet" ref="{{page.css}}"></noscript>
         {% endif %}
 
         {% seo %}
